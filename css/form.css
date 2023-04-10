@@ -1,0 +1,32 @@
+label{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.8rem;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Rubik Iso', cursive;
+    font-size: 1rem;
+    border: 1.5px solid rgba(128, 128, 128, 0.675);
+    margin: auto;
+    text-align: center;
+}
+button{
+    width: 300px;
+    height: 30px;
+    margin: auto;
+    border: none;
+    background-color: #270b36;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    transition: 0.5s;
+}
+input:hover{
+    border:1px solid #270b36;
+    background-color: rgba(128, 128, 128, 0.101);
+}
+button:hover{
+    background-color: #bb49e0;
+}

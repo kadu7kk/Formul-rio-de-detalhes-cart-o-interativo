@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--jquery-->
+    <script src="js/jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/respon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>Card Interativo</title>
+</head>
+<body>
+  <div class="main">
+    <div class="img">
+        <div class="card-front">
+          <img id="logo" src="images/card-logo.svg" alt="">
+          <br>
+          <br>
+          <h1 id="number_card">0000 0000 0000 0000 </h1>
+          <p id="name" style="left: 20px;">name</p>
+          <br>
+          <p id="date_valid" style="left: 250px; ">00/00</p>
+          <img src="images/bg-card-front.png" alt="Card_front" class="front">
+        </div>
+        <br>
+        <br>
+        <div class="card-back">
+          <img src="images/bg-card-back.png" alt="card back" id="back">
+          <p id="cvv">000</p>
+        </div>
+    </div>
+    <div id="form">
+        <label for="card_name_txt">Cardholder Name</label>
+        <br>
+        <input type="text" name="card_name_txt" id="card_name_txt" placeholder="e.g. Jane Appleseed">
+        <br>
+        <label for="card_number_txt">Card Number</label>
+        <br>
+        <input type="text" name="card_number_txt" id="card_number_txt" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+        <br>
+        <div>
+        <label for="data_txt">Exp. Date (MM/YY)</label>
+        <input type="text" name="data_txt" id="data_txt" style="width: 30px;" placeholder="MM" maxlength="2">
+        <input type="text" name="data_txt" id="data_txt_2" style="width: 30px; display: inline;" placeholder="YY" maxlength="2">
+        <label for="cvv_txt">CVV</label>
+        <input type="text" name="cvv_txt" id="cvv_txt" style="width: 90px;" placeholder="cvv" maxlength="3">
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="validarForm()">Confirm</button>
+        
+    </div>
+  </div>  
+  <script src="js/js.js"></script>
+ 
+</body>
+</html>

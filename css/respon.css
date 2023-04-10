@@ -1,0 +1,59 @@
+@media all and (max-width:905px) {
+    body {
+        background: #d9a7c7;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-size: 65.5%;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+    .card-front{
+        left: 80px;
+    }
+    .card-back{
+        left: 83px;
+    }
+    
+}
+@media all and (max-width:691px) {
+    .card-front{
+        left: 40px;
+    }
+    .card-back{
+        left: 43px;
+    }
+}
+@media all and (max-width:648px) {
+    
+    .card-front{
+        left: 18px;
+    }
+    .card-back{
+        left: 18px;
+    }
+    
+}
+@media all and (max-width:621px) {
+    .card-front{
+        left: 130px;
+        top:70px;
+    }
+    .card-back{
+        left: 148px;
+        top: -230px;
+        z-index: -1;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    #form{
+        position: absolute;
+        top: 400px;
+        left: 130px;
+    }
+    #thank{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
